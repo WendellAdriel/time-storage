@@ -18,7 +18,8 @@
     "contributors:add": "all-contributors add",
     "lint": "eslint ./src --color",
     "test": "jest",
-    "coverage": "jest --coverage",
+    "test:coverage": "jest --coverage",
+    "test:badges": "yarn test:coverage && make-coverage-badge",
     "build": "webpack --mode production",
     "prepublish": "yarn lint && yarn test && yarn build"
   },
@@ -42,11 +43,17 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "jest": "^23.3.0",
+    "make-coverage-badge": "^1.0.1",
     "mock-local-storage": "^1.0.5",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
   },
   "dependencies": {
     "dayjs": "^1.7.2"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary"
+    ]
   }
 }

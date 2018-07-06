@@ -1,5 +1,6 @@
 # Time Storage
 
+![Coverage](./coverage/badge.svg)
 [![CircleCI](https://circleci.com/gh/WendellAdriel/time-storage/tree/master.svg?style=svg)](https://circleci.com/gh/WendellAdriel/time-storage/tree/master)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/time-storage/blob/master/LICENSE)
 
