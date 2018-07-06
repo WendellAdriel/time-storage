@@ -19,7 +19,7 @@
     "lint": "eslint ./src --color",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:badges": "yarn test:coverage && make-coverage-badge",
+    "test:badges": "yarn test:coverage && make-coverage-badge && mv ./coverage/badge.svg ./coverage-badge.svg",
     "build": "webpack --mode production",
     "prepublish": "yarn lint && yarn test && yarn build"
   },
