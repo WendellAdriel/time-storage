@@ -1,5 +1,8 @@
 # Time Storage
 
+[![CircleCI](https://circleci.com/gh/WendellAdriel/time-storage/tree/master.svg?style=svg)](https://circleci.com/gh/WendellAdriel/time-storage/tree/master)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/time-storage/blob/master/LICENSE)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 Small library to work with the local storage implementing lifetime for its items
