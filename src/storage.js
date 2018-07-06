@@ -48,6 +48,21 @@ export default class {
   }
 
   /**
+   * Gets all the valid values of this time storage
+   */
+  getAll () {
+    const values = Object.keys(this.storage)
+      .filter(key => key.startsWith(this.namespace))
+      .map(key => {
+        const parsed = JSON.parse(this.storage.getItem(key))
+        parsed.key = key
+        return parsed
+      })
+
+    return values.filter(item => dayjs().isBefore(dayjs(item.valid_until)))
+  }
+
+  /**
    * Sets an item to this time storage
    *
    * @param {String} key

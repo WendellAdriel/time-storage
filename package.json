@@ -17,8 +17,10 @@
     "contributors:generate": "all-contributors generate",
     "contributors:add": "all-contributors add",
     "lint": "eslint ./src --color",
+    "test": "jest",
+    "coverage": "jest --coverage",
     "build": "webpack --mode production",
-    "prepublish": "yarn lint && yarn build"
+    "prepublish": "yarn lint && yarn test && yarn build"
   },
   "repository": "git@github.com:WendellAdriel/time-storage.git",
   "bugs": {
@@ -31,6 +33,7 @@
     "all-contributors-cli": "^5.2.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
@@ -38,6 +41,8 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.3.0",
+    "mock-local-storage": "^1.0.5",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
   },
