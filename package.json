@@ -1,6 +1,6 @@
 {
   "name": "time-storage",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Small library to work with the local storage implementing lifetime for its items",
   "main": "./dist/time-storage.js",
   "files": [
