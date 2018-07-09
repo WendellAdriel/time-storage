@@ -15,6 +15,7 @@ export default function (
   defaultTimeUnit = undefined
 ) {
   if (!Helpers.isLocalStorageSupported()) return null
+  if (!Helpers.isNamespaceValid(namespace)) return null
 
   const timeUnit =
     defaultTimeUnit && Helpers.isUnitValid(defaultTimeUnit)

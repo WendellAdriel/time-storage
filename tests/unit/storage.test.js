@@ -93,7 +93,8 @@ global.test('getAll() must return all items from the time storage', () => {
   storage.set('my_key', 'my_value')
   storage.set('my_second_key', 'my_second_value')
 
-  global.expect(storage.getAll().length).toBe(2)
+  const storageItems = storage.getAll()
+  global.expect(Object.keys(storageItems).length).toBe(2)
 })
 
 global.test('clear() must remove all items from the time storage', () => {
@@ -101,5 +102,6 @@ global.test('clear() must remove all items from the time storage', () => {
   storage.set('my_second_key', 'my_second_value')
   storage.clear()
 
-  global.expect(storage.getAll().length).toBe(0)
+  const storageItems = storage.getAll()
+  global.expect(Object.keys(storageItems).length).toBe(0)
 })

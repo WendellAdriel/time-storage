@@ -49,6 +49,8 @@ export default class {
 
   /**
    * Gets all the valid values of this time storage
+   *
+   * @returns {Object}
    */
   getAll () {
     const values = Object.keys(this.storage)
@@ -59,7 +61,13 @@ export default class {
         return parsed
       })
 
-    return values.filter(item => dayjs().isBefore(dayjs(item.valid_until)))
+    const filtered = values.filter(item =>
+      dayjs().isBefore(dayjs(item.valid_until))
+    )
+
+    const formatted = {}
+    filtered.forEach(item => (formatted[item.key] = item.data))
+    return formatted
   }
 
   /**
