@@ -50,7 +50,7 @@ const mySecondStorage = TimeStorage("my_second_storage", 60);
 const myThirdStorage = TimeStorage("my_third_storage", 3, "hour");
 ```
 
-#### get(key: String, defaultValue: any (default: null)): any
+#### get(key: String, defaultValue: any _[default: null]_): any
 
 Checks if the Time Storage has the item for the given key and returns if the item is found and if it's still valid, otherwise returns the `defaultValue`
 
@@ -79,7 +79,7 @@ const myStorage = TimeStorage("my_storage");
 myStorage.getAll();
 ```
 
-#### set(key: String, value: any, validFor: Number (default: Storage default validity), timeUnit: String, (default: Storage default time unit))
+#### set(key: String, value: any, validFor: Number _[default: Storage default validity]_, timeUnit: String, _[default: Storage default time unit]_)
 
 Sets an item on the Time Storage with the given key. If `validFor` is given, this value will be used instead of the default validity of the Time Storage. If `timeUnit` is given, this unit will be used instead of the default validity of the Time Storage.
 
