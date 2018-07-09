@@ -6,6 +6,14 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npmcharts]
+[![size][size-badge]][unpkg-dist] [![gzip size][gzip-badge]][unpkg-dist]
+
+[![Watch on GitHub][github-watch-badge]][github-watch]
+[![Star on GitHub][github-star-badge]][github-star]
+[![Tweet][twitter-badge]][twitter]
+
 Small library to work with the local storage implementing lifetime for its items
 
 ## How to use
@@ -143,3 +151,17 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+[downloads-badge]: https://img.shields.io/npm/dm/time-storage.svg?style=flat-square
+[npmcharts]: http://npmcharts.com/compare/time-storage
+[version-badge]: https://img.shields.io/npm/v/time-storage.svg?style=flat-square
+[package]: https://www.npmjs.com/package/time-storage
+[size-badge]: http://img.badgesize.io/https://unpkg.com/time-storage/dist/time-storage.js?style=flat-square&label=size
+[unpkg-dist]: https://unpkg.com/time-storage/dist/
+[gzip-badge]: http://img.badgesize.io/https://unpkg.com/time-storage/dist/time-storage.js?label=gzip%20size&style=flat-square&compression=gzip
+[github-watch-badge]: https://img.shields.io/github/watchers/WendellAdriel/time-storage.svg?style=social
+[github-watch]: https://github.com/WendellAdriel/time-storage/watchers
+[github-star-badge]: https://img.shields.io/github/stars/WendellAdriel/time-storage.svg?style=social
+[github-star]: https://github.com/WendellAdriel/time-storage/stargazers
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20time-storage!%20https://github.com/WendellAdriel/time-storage%20%F0%9F%91%8D
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/WendellAdriel/time-storage.svg?style=social
